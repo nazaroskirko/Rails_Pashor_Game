@@ -1,0 +1,16 @@
+<div id="mySidenav" class="sidenav">
+  <a class="sidebar-menu-item" href="/admin/dashboard"> Game Statistics </a>
+  <a class="sidebar-menu-item" href="/admin/manage-items">Item Manager</a>
+  <a class="sidebar-menu-item" href="#">Users</a>
+  <a class="sidebar-menu-item" href="#">Settings</a>
+</div>
+
+<script type="text/javascript">
+$(function(){
+  $('a').each(function() {
+    if ($(this).prop('href') == window.location.href) {
+      $(this).addClass('current');
+    }
+  });
+});
+</script>

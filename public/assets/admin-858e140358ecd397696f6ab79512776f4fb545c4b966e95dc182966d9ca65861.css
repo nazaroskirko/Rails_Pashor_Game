@@ -1,0 +1,158 @@
+*{
+    font-family: 'Roboto';
+    font-weight: 300;
+}
+
+/* The side navigation menu */
+.sidenav {
+    float: left;
+    height: 100%; /* 100% Full-height */
+    width: 200px; /* 0 width - change this with JavaScript */
+    position: fixed; /* Stay in place */
+    z-index: 0; /* Stay on top */
+    top: 0;
+    left: 0;
+    background-color: #111; /* Black*/
+    overflow-x: hidden; /* Disable horizontal scroll */
+    padding-top: 60px; /* Place content 60px from the top */
+    transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
+}
+
+.img-thumbnail{
+  max-width: 70px !important;
+}
+
+.sidebar-menu-item{
+    border-bottom: 1px solid white;
+    text-decoration: none;
+}
+.sidebar-menu-item.current{
+    background-color: #2F4F4F;
+    color:white;
+}
+.sidebar-menu-item:hover{
+    background-color: #2F4F4F;
+    text-decoration: none;
+}
+
+.main{
+    float: left;
+    text-align: center;
+    padding-left: 200px;
+    height: 100%;
+    width: 100%;
+    background-color: #eaeaea;
+}
+
+/* The navigation menu links */
+.sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s
+}
+
+/* When you mouse over the navigation links, change their color */
+.sidenav a:hover, .offcanvas a:focus{
+    color: #f1f1f1;
+}
+
+.devise-container{
+    padding-right: 10px;
+    width: 100%;
+    background-color: #eaeaea;
+    text-align: right;
+    height: 25px;
+}
+
+.stat-card{
+    background-color: white;
+    padding: 15px;
+    margin: 10px;
+    text-align: center;
+    border-radius: 10px;
+}
+
+.circle {
+    background-color: lightblue;
+    border-radius: 50%;
+    padding-top: 40px;
+    width: 100px;
+    height: 100px;
+    text-align: center;
+    display: inline-block;
+    margin: 20px;
+}
+
+.stat-description-title{
+    margin: 20px;
+    color: grey;
+}
+
+.items-table{
+    width: 100%;
+    height: 100%;
+}
+
+
+.item-img-container{
+    width: 100px;
+    height: 100px;
+    border: 1px solid black;
+}
+
+.item-img-container img{
+    width: 100%;
+    height: 100%;
+}
+
+.item-cell{
+    border: 1px solid black;
+    width: 100px;
+    height: 200px;
+}
+.item-cell img{
+    width: 100%;
+    height: 100%;
+}
+.item-row{
+    height: 100px;
+}
+
+.item-table-headings{
+    text-align: center;
+}
+
+.item-form{
+    text-align: left;
+    margin: 10px;
+    height: 100%;
+}
+
+.field{
+    margin: 10px;
+}
+
+/*
+Generic Styling, for Desktops/Laptops
+*/
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+/* Zebra striping */
+tr:nth-of-type(odd) {
+  background: #d3d3d3;
+}
+th {
+  background: #333;
+  color: white;
+  font-weight: bold;
+}
+td, th {
+  padding: 6px;
+  border: 1px solid #ccc;
+  text-align: center;
+}

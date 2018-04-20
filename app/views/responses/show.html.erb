@@ -1,0 +1,29 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Item:</strong>
+  <%= @response.item %>
+</p>
+
+<p>
+  <strong>Game:</strong>
+  <%= @response.game %>
+</p>
+
+<p>
+  <strong>Bin:</strong>
+  <%= @response.bin %>
+</p>
+
+<p>
+  <strong>Correct:</strong>
+  <%= @response.correct %>
+</p>
+
+<p>
+  <strong>Time taken:</strong>
+  <%= @response.time_taken %>
+</p>
+
+<%= link_to 'Edit', edit_response_path(@response) %> |
+<%= link_to 'Back', responses_path %>

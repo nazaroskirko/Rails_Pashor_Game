@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Sorting Game</title>
+    <meta charset="UTF-8" />
+    <%= csrf_meta_tags %>
+    <title>hello phaser!</title>
+    <%= stylesheet_link_tag "app.css" %>
+    <%= stylesheet_link_tag "bootstrap.min.css" %>
+    <%= javascript_include_tag "phaser.min.js" %>
+    <%= javascript_include_tag "phaser-transitions.min.js" %>
+    <%= javascript_include_tag "jquery-3.2.1.min.js" %>
+    <%= javascript_include_tag "bootstrap.min.js" %>
+
+    <%= javascript_include_tag "game/models/bin.js" %>
+    <%= javascript_include_tag "game/models/stats_manager.js" %>
+    <%= javascript_include_tag "game/models/score_manager.js" %>
+    <%= javascript_include_tag "game/models/ui_manager.js" %>
+    <%= javascript_include_tag "game/models/session_manager.js" %>
+
+    <%= javascript_include_tag "game/states/leveltemplates.js" %>
+    <%= javascript_include_tag "game/states/leaderboard.js" %>
+    <%= javascript_include_tag "game/states/start_screen.js" %>
+    <%= javascript_include_tag "game/states/level_one.js" %>
+    <%= javascript_include_tag "game/states/level_two.js" %>
+    <%= javascript_include_tag "game/states/level_three.js" %>
+    <%= javascript_include_tag "game/states/level_one_summary.js" %>
+    <%= javascript_include_tag "game/states/level_two_summary.js" %>
+    <%= javascript_include_tag "game/states/level_three_summary.js" %>
+    <%= javascript_include_tag "game/states/level_summary.js" %>
+    <%= javascript_include_tag "game/states/start_screen.js" %>
+
+    <%= javascript_include_tag "game/states/boot.js" %>
+
+    <%= javascript_include_tag "game/api/api_manager.js" %>
+  </head>
+
+  <body>
+    <%= yield %>
+  </body>
+</html>

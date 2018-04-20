@@ -1,0 +1,44 @@
+<%= form_for item, html: {multipart: true} do |f| %>
+  <% if item.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(item.errors.count, "error") %> prohibited this item from being saved:</h2>
+
+      <ul>
+      <% item.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+<div class="item-form">
+  <div class="field">
+    <%= f.label :name %><br>
+    <%= f.text_field :name, class: 'form-group left-addon'  %>
+  </div>
+  <div class="field">
+    <%= f.label :image %><br>
+    <%= f.file_field :image_url, class: 'file-inputs' %>
+  </div>
+  <div class="field">
+    <%= f.label :description %><br>
+    <%= f.text_field :description %>
+  </div>
+  <div class="field"> 
+    <%= f.label :bin %><br><small> 1: Recycling, 2:Garbage, 3:Food, 4:Paper</small><br>
+    <%= f.number_field :bin_id %>
+  </div>
+    <div class="field">
+    <%= f.label :level %><br><small> Difficulty of 1,2 or 3</small><br>
+    <%= f.number_field :level_id %>
+  </div>
+  <div class="field">
+    <%= f.label :incorrect_message %><br>
+    <%= f.text_field :incorrect_message %>
+  </div>
+
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+</div>
+<% end %>

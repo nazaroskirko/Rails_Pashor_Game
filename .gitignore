@@ -1,0 +1,7 @@
+.bundle
+db/*.sqlite3
+log/*.log
+tmp/
+scripts/
+# Ignore application configuration
+/config/application.yml

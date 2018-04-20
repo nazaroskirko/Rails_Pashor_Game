@@ -1,0 +1,100 @@
+<div class="container-fluid">
+  <h2> Overview </h2>
+    <div class="container">
+      <div class="row">
+
+        <div class="col-lg-3 offset-1 stat-card">
+          <div class="circle">
+            <h3> <%= @numGames %> </h3>
+          </div>
+          <h4> Total Games Played </h4>
+        </div>
+
+        <div class="col-lg-3 stat-card">
+          <div class="circle">
+            <h3> <%= @numTime %> </h3>
+          </div>
+          <h4> Total Time Spent (Hrs)</h4>
+        </div>
+
+        <div class="col-lg-3 stat-card">
+          <div class="circle smaller-text-stat">
+            <p> <strong><%= @numIncorrectBinName %> </strong> </p>
+          </div>
+          <h4> Most Incorrect </h4>
+        </div>
+
+      </div>
+      <h2> Bin Stats </h2>
+      <div class="row text-center" style="padding-left: 250px;">
+
+        <div class="col-lg-4 stat-card">
+          <div class="circle">
+            <h3> <%= @bin_1_incorrect %> </h3>
+          </div>
+          <h4> Garbage </h4>
+          <small> Percentage Correct </small>
+        </div>
+
+        <div class="col-lg-4 stat-card">
+          <div class="circle">
+            <h3> <%= @bin_2_incorrect %>  </h3>
+          </div>
+          <h4> Recycling </h4>
+          <small> Percentage Correct </small>
+        </div>
+
+        <div class="col-lg-4 stat-card">
+          <div class="circle">
+            <h3> <%= @bin_3_incorrect %> </h3>
+          </div>
+          <h4> Paper </h4>
+          <small> Percentage Correct </small>
+        </div>
+
+        <div class="col-lg-4 stat-card">
+          <div class="circle">
+            <h3> <%= @bin_4_incorrect %> </h3>
+          </div>
+          <h4> Food </h4>
+          <small> Percentage Correct </small>
+        </div>
+
+      </div>
+      <h2> User Stats </h2>
+      <div class="row text-center" style="padding-left: 250px;">
+
+        <div class="col-lg-4 stat-card">
+          <div class="circle">
+            <h3> <%= @avgTime.round(1) %> (s) </h3>
+          </div>
+          <h4> Average time </h4>
+          <small> To sort one item </small>
+        </div>
+
+        <div class="col-lg-4 stat-card">
+          <div class="circle">
+            <h3> <%= @averageScore.round %> </h3>
+          </div>
+          <h4> Average Score </h4>
+        </div>
+
+        <div class="col-lg-4 stat-card">
+          <div class="circle">
+            <h3> <%= @newUsers %></h3>
+          </div>
+          <h4> New Users </h4>
+          <small> Past week</small>
+        </div>
+
+        <div class="col-lg-4 stat-card">
+          <div class="circle">
+            <h3> <%= @overallCorrectPercentage.round(1) %> % </h3>
+          </div>
+          <h4> Overall Correct </h4>
+          <small> Sorted correct on 1st attempt</small>
+        </div>
+
+      </div>
+    </div>
+</div>

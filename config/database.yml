@@ -1,0 +1,29 @@
+
+
+
+
+default: &default
+  adapter: postgresql
+  encoding: unicode
+  pool: 5
+  timeout: 5000
+  host: localhost
+  username: pguser #pguser
+  password: kms2016 #TODO: Change to ENV variable 
+
+development:
+  <<: *default
+  database: sorting_game_db
+
+# Warning: The database defined as "test" will be erased and
+# re-generated from your development database when you run "rake".
+# Do not set this db to the same as development or production.
+
+production:
+  adapter: postgresql
+  encoding: unicode
+  host: ec2-184-72-252-69.compute-1.amazonaws.com
+  database: d7al7bot8gdrq8
+  username: uyrgxlteeboudv
+  port: 5432
+  password: 452d2db510a0ebe8d04606c472bddb32b20e958aec54f8377f510861dde8105f #TODO: <%= ENV['BUTLERCLUB_DATABASE_PASSWORD'] %>

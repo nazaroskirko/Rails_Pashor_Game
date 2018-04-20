@@ -1,0 +1,15 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  item: one
+  game: one
+  bin: one
+  correct: false
+  time_taken: 1
+
+two:
+  item: two
+  game: two
+  bin: two
+  correct: false
+  time_taken: 1

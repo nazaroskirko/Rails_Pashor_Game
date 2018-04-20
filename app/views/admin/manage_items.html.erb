@@ -1,0 +1,45 @@
+<h1> Item Manager </h1>
+<br>
+<br>
+<h2> <%= link_to 'Add a new item >', new_item_path %> </h2>
+
+<div class="container">
+<table class="items-table">
+  <thead>
+    <tr>
+      <th class="item-table-headings"> Name </th>
+      <th class="item-table-headings"> ID </th>
+      <th class="item-table-headings"> Description </th>
+      <th class="item-table-headings"> Image Preview </th>
+      <th class="item-table-headings"> Actions </th>
+      <th class="item-table-headings"> Bin </th>
+      <th class="item-table-headings"> Views </th>
+      <th class="item-table-headings"> Correct(%) </th>
+      <th class="item-table-headings"> Avg time(s) </th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @items.each do |item| %>
+      <tr>
+        <td class="item-cell"><%= item.name %></td>
+        <td class="item-cell"><%= item.id %></td>
+        <td class="item-cell"><%= item.description %></td>
+        <td class="item-cell"><img src="<%= item.image_url.url %>"/></td>
+        <td class="item-cell">
+          <%= link_to 'Show', item %> <br>
+          <%= link_to 'Edit', edit_item_path(item) %> <br>
+          <%= link_to 'Destroy', item, method: :delete, data: { confirm: 'Are you sure?' } %>
+        </td>
+        <td class="item-cell"><%= item.bin.name %></td>
+        <td class="item-cell"><%= @items.count %></td>
+        <td class="item-cell">93</td>
+        <td class="item-cell">87</td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+  
+</div>
+
+

@@ -1,0 +1,44 @@
+<style type="text/css">
+  img{
+    max-width: 100px;
+    max-height: 100px;
+  }
+</style>
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @item.name %>
+</p>
+
+<p>
+  <strong>Image url:</strong>
+  <br>
+  <img src="<%= @item.image_url.url %>"/>
+  <br>
+  <%= @item.image_url %>
+</p>
+
+<p>
+  <strong>Incorrect Message:</strong>
+  <%= @item.incorrect_message %>
+</p>
+
+<p>
+  <strong>Description:</strong>
+  <%= @item.description %>
+</p>
+<p>
+  <strong>Bin ID:</strong> <br>
+  <%=@item.bin.name %><br>
+  Bin ID:<%= @item.bin_id %>
+</p>
+<p>
+  <strong>Level ID:</strong> <br>
+  Version:<%= @item.level.version.name %> <br>
+  Level: <%= @item.level_id %>
+</p>
+
+
+<%= link_to 'Edit', edit_item_path(@item) %> |
+<%= link_to 'Back', items_path %>

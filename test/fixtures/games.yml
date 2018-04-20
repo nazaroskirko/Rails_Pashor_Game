@@ -1,0 +1,11 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  total_time: 
+  version: one
+  total_points: 1
+
+two:
+  total_time: 
+  version: two
+  total_points: 1
